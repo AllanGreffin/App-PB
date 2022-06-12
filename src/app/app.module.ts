@@ -10,6 +10,7 @@ import { MainWindowComponent } from './main-window/main-window.component';
 import { PlaceCardComponent } from './place-card/place-card.component';
 import { LocationService } from './services/location.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule 
+    HttpClientModule,
+    FontAwesomeModule 
   ],
   providers: [LocationService],
   bootstrap: [AppComponent]

@@ -12,4 +12,8 @@ export class LocationService {
   public GetAllLocations(){
     return this.http.get<any>(this.path + "/GetAllLocations");
   }
+
+  public GetAllEmergencyLocations(){
+    return this.http.get<any>(this.path + "/GetAllEmergencyLocations");
+  }
 }

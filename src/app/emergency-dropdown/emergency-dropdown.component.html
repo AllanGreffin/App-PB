@@ -1,1 +1,32 @@
-<p>emergency-dropdown works!</p>
+<div (click)="openClose()">
+    <div class="closed-emergency-dropdown" *ngIf="isClosed">
+        {{ emergencyLocation.tipo }}
+        
+        <fa-icon [icon]="faArrowDown"></fa-icon>
+    </div>
+    <div class="opened-emergency-dropdown" *ngIf="!isClosed">
+        <div class="opened-title">
+            {{ emergencyLocation.tipo }}
+            
+            <fa-icon [icon]="faArrowRight"></fa-icon>
+        </div>
+        
+        <div class="opened-content">
+            <div class="left-side-content">
+                <ul>
+                    <li>{{ emergencyLocation.name }}</li>
+                    <li>{{ emergencyLocation.endereco }}</li>
+                    <li>{{ emergencyLocation.telefone }}</li>
+                </ul>
+                <button class="btn-call" (click)="call($event)">Call now !</button>
+            </div>
+            
+            <div class="right-side-content">
+                <div class="iframe-container">
+                    <iframe class="iframe-himself" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.%20Lobo%20J%C3%BAnior,%202293%20-%20Penha%20Circular,%20Rio%20de%20Janeiro&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
