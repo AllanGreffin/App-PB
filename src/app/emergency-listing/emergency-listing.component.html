@@ -1,7 +1,8 @@
 <div>
-    <a class="navigation-anchor" href="/"><fa-icon [icon]="faArrowLeft"></fa-icon>&nbsp;Voltar</a>
+    <a class="navigation-anchor" href="/" aria-label="return to HomePage"><fa-icon [icon]="faArrowLeft"></fa-icon>&nbsp;Voltar</a>
 
-    <app-emergency-dropdown *ngFor="let emergencyLocation of emergencyLocations" [emergencyLocation]="emergencyLocation">
+    <app-emergency-dropdown *ngFor="let emergencyLocation of emergencyLocations; let i=index" attr.aria-label="Open {{ emergencyLocation }} dropdown" 
+    [tabindex]="i + 1" [emergencyLocation]="emergencyLocation">
     </app-emergency-dropdown>
     
 </div>

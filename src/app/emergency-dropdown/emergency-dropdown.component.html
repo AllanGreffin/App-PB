@@ -1,4 +1,4 @@
-<div (click)="openClose()">
+<div (click)="openClose()" (keyup.enter)="openClose()">
     <div class="closed-emergency-dropdown" *ngIf="isClosed">
         {{ emergencyLocation.tipo }}
         

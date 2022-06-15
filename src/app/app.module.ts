@@ -11,6 +11,7 @@ import { PlaceCardComponent } from './place-card/place-card.component';
 import { LocationService } from './services/location.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     PlaceCardComponent,
     PlaceListingComponent,
     EmergencyListingComponent,
-    EmergencyDropdownComponent
+    EmergencyDropdownComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

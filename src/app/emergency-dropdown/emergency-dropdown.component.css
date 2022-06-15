@@ -45,7 +45,7 @@
     align-items: center;
 }
 
-.btn-call{
+.button-call{
     background-color: #ee3e3e;
     border-radius: 5px;
     color: white;
@@ -56,11 +56,11 @@
     box-shadow: 1px 2px #999;
 }
 
-.btn-call:hover{
+.button-call:hover{
     background-color: #ff0000;
 }
 
-.btn-call:active{
+.button-call:active{
     transform: translateY(2px);
     box-shadow: 1px 0px #999;
 }
