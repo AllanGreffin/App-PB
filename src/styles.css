@@ -9,6 +9,12 @@
     height: 100vh;
 }
 
+.login{
+    padding-right: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .button-primary{
     background-color: #427ef5;
     margin: 10px;
